@@ -242,7 +242,7 @@
 
     
         <meta property="article:published_time" content="Tue Oct 16 2018 15:10:46 GMT+0800">
-        <meta property="article:modified_time" content="Tue Oct 16 2018 15:32:27 GMT+0800">
+        <meta property="article:modified_time" content="Tue Oct 16 2018 15:49:41 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "https://lannme.page/2018/10/16/Hello-Anne/index.html",
     "headline": "Hello Anne",
     "datePublished": "Tue Oct 16 2018 15:10:46 GMT+0800",
-    "dateModified": "Tue Oct 16 2018 15:32:27 GMT+0800",
+    "dateModified": "Tue Oct 16 2018 15:49:41 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "John Doe",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Happy-Baby-Birthday-birthday-strawberry-melon"><span class="post-toc-number">1.</span> <span class="post-toc-text">Happy Baby Birthday!:birthday::strawberry::melon:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Just-Wanna-Say-Hi-To-My-Baby-Anne"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Just Wanna Say Hi To My Baby Anne!</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Happy-Baby-Birthday-birthday-strawberry-melon"><span class="post-toc-number">1.</span> <span class="post-toc-text">Happy Baby Birthday! 🎂 🍓 🍈</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Just-Wanna-Say-Hi-To-My-Baby-Anne"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Just Wanna Say Hi To My Baby Anne!</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -485,7 +485,25 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p><img src="https://static.laravelacademy.org/wp-content/uploads/2016/06/laravel-birthday.jpg" alt="Alt text"></p>
-<h2 id="Happy-Baby-Birthday-birthday-strawberry-melon"><a href="#Happy-Baby-Birthday-birthday-strawberry-melon" class="headerlink" title="Happy Baby Birthday!:birthday::strawberry::melon:"></a>Happy Baby Birthday!:birthday::strawberry::melon:</h2><h3 id="Just-Wanna-Say-Hi-To-My-Baby-Anne"><a href="#Just-Wanna-Say-Hi-To-My-Baby-Anne" class="headerlink" title="Just Wanna Say Hi To My Baby Anne!"></a>Just Wanna Say Hi To My Baby Anne!</h3>
+<h2 id="Happy-Baby-Birthday-birthday-strawberry-melon"><a href="#Happy-Baby-Birthday-birthday-strawberry-melon" class="headerlink" title="Happy Baby Birthday! :birthday: :strawberry: :melon:"></a>Happy Baby Birthday! <span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f382.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f382.png?v8">&#x1F382;</span> <span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f353.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f353.png?v8">&#x1F353;</span> <span class="github-emoji" style="color: transparent;background:no-repeat url(https://assets-cdn.github.com/images/icons/emoji/unicode/1f348.png?v8) center/contain" data-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f348.png?v8">&#x1F348;</span></h2><h3 id="Just-Wanna-Say-Hi-To-My-Baby-Anne"><a href="#Just-Wanna-Say-Hi-To-My-Baby-Anne" class="headerlink" title="Just Wanna Say Hi To My Baby Anne!"></a>Just Wanna Say Hi To My Baby Anne!</h3><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
         
     
 
